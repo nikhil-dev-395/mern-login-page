@@ -1,11 +1,11 @@
 import express from "express";
-import { config } from "dotenv";
+import dotenv from "dotenv";
+dotenv.config();
 import connectDB from "./src/db/database.js";
 import router from "./src/routes/singUp.routes.js";
 import cors from "cors";
 const app = express();
 const port = 3000;
-config();
 connectDB();
 
 /*
